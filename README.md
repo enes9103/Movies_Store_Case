@@ -1,6 +1,6 @@
 ## About The Project
-Movie Store, kullanıcıların istedikleri filmleri aratabildikleri, film detaylarını araştırıp inceleyebilecekleri, istedikleri filmlerin favorilerine ekleyebilecekleri ve ayrıca kendi istedikleri filmleri oluşturup güncelleyip silebileceği bir uygulamadır.
-DEMO: https://movieapptypescript.herokuapp.com/
+Movie Store is an application where users can search for movies they want, search and review movie details, add movies they want to their favorites, and also create, update and delete movies they want.
+DEMO: https://movies-store-case.vercel.app/
 
 <!-- DESCRİPTİON -->
 ## Description
@@ -15,15 +15,10 @@ DEMO: https://movieapptypescript.herokuapp.com/
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- PROJECT OUTCOME -->
-## Project Outcome
-![Project gif](Animation_App.gif)
-
-
 <!-- DEVELOPMENT PROCESS -->
 ## Project Development Process
 
-- 1 : api registered to `https://omdbapi.com/ and get API key to get data from ``https://www.omdbapi.com/?apikey=${ API_KEY}`, ` to search movies https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}` and `https://www.omdbapi.com/?apikey=${API_KEY}&i=${ for movie details id}`.
+- 1 : api registered to `https://omdbapi.com/` and get API key to get data from `https://www.omdbapi.com/?apikey=${ API_KEY}`, to search movies `https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}` and `https://www.omdbapi.com/?apikey=${API_KEY}&i=${ for movie details id}`.
 
 - 2: The project was built using the React.js library.
 
@@ -117,7 +112,7 @@ _Below is an example of how you can instruct your audience on installing and set
 1. Get a free API Key at [https://omdbapi.com/](https://omdbapi.com/)
 3. Clone the repo
    ```sh
-   git clone https://github.com/enes9103/movie_app_task_react_ts
+   git clone https://github.com/enes9103/Movies_Store_Case.git
    ```
 4. Install NPM packages
    ```sh
