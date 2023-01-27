@@ -10,7 +10,7 @@ const API_KEY = 'f702e232'; // OMDb API Key
 const MovieApp = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
   const [movies, setMovies] = useState();
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('ice age');
   const [selectedMovie, setSelectedMovie] = useState('');
 
   const fetchMovies = async (search) => {
