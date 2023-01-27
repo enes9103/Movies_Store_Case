@@ -26,8 +26,8 @@ const Home = () => {
     <div className="">
       <div className="border border-b-2">
         <marquee
-          onmouseout="this.start();"
-          onmouseover="this.stop();"
+          onMouseOut="this.start();"
+          onMouseOver="this.stop();"
           className="mt-2"
         >
           <div className="flex">
