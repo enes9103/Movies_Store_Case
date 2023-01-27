@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+## About The Project
+Movie Store, kullanıcıların istedikleri filmleri aratabildikleri, film detaylarını araştırıp inceleyebilecekleri, istedikleri filmlerin favorilerine ekleyebilecekleri ve ayrıca kendi istedikleri filmleri oluşturup güncelleyip silebileceği bir uygulamadır.
+DEMO: https://movieapptypescript.herokuapp.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- DESCRİPTİON -->
+## Description
+- Movie Application consists of 5 pages: "Home page", "Search and listing", "Favorites", "Add Movie" and "movie detail" that does not appear in the header.
+- With the Movie Application, users will be able to search and list the movies they want, see their details and add them to their favourites, and create a new movie list by adding the movies they want.
+- Movies can be listed as sliders by using the swiper.js library under the 'coming soon' title on the main page of the application. They can go to the pages they want from adding movies and movie calling cards.
+- You can search and filter the movies you want from the movie search page and add them to your favorites.
+- You can see the list of movies added to favorites from the favorite page.
+- You can view the details of the listed movies by clicking on the relevant movie.
+- You can create the movie you want from the add movie page and add it to your list. You can update or delete these movies later if you wish.
+- The application can work responsively on mobile and desktop platforms.
 
-## Available Scripts
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-In the project directory, you can run:
+<!-- PROJECT OUTCOME -->
+## Project Outcome
+![Project gif](Animation_App.gif)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- DEVELOPMENT PROCESS -->
+## Project Development Process
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 1 : api registered to `https://omdbapi.com/ and get API key to get data from ``https://www.omdbapi.com/?apikey=${ API_KEY}`, ` to search movies https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}` and `https://www.omdbapi.com/?apikey=${API_KEY}&i=${ for movie details id}`.
 
-### `npm test`
+- 2: The project was built using the React.js library.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 3 : Tailwind css is used as a css library for styling purposes in the project.
 
-### `npm run build`
+- 4 : Material UI and Tailwind UI libraries were used as Uikit in the project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 5 : The application is designed in a responsive structure that can run smoothly on mobile and desktop platforms.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 6 : Movies added by the user are stored in Locale Storage and configured to not go away even when the browser tab is closed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 7 : Context Provider structure was used as state management.
 
-### `npm run eject`
+- 8 : All fields were made mandatory when adding movies, and added movies were created in a structure that can be updated and deleted (including modal deletion confirmation).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 9 : Generic components were created that can be reused throughout the project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 10 : The movies listed on the search page are listed in order by name, year and genre by default.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 11 : After the movies were listed, a structure was set up where the year type and name filtering could be done and the desired movie filtering could be done.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 12: The application has been shared on Github. While the project was being prepared, the development stages were committed and pushed to the repo.
 
-## Learn More
+- 13: Added gif and detailed README.md file after the project was completed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 14: The yarn package manager was used during application development. Webpack was used for pre-deployment packaging.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 15: The project is finally deployed using the Vercel service.
 
-### Code Splitting
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- PROJECT SKELETON -->
+## Project Skeleton
 
-### Analyzing the Bundle Size
+```
+Movie App (folder)
+|
+├── public
+│    └── index.html
+├── src
+│    ├── assets
+│    │     └── logo1.png
+│    ├── components
+│    │     ├── Card.jsx
+│    │     ├── EditForm.jsx
+│    │     ├── Header.jsx
+│    │     ├── Input.jsx
+│    │     └── TaskItem.jsx
+│    ├── config
+│    │     └── Router.jsx
+│    ├── context
+│    │     └── MovieContext.jsx
+│    ├── hooks
+│    │     └── useLocaleStorge.jsx
+│    ├── pages
+│    │     ├── AddMovies.jsx
+│    │     ├── Detail.jsx
+│    │     ├── Favorite.jsx
+│    │     ├── Home.jsx
+│    │     └── SearchMovies.jsx
+│    ├── App.jsx
+│    ├── App.css
+│    ├── index.js
+│    ├── index.css
+│    └── setupTest.ts
+├── package.json
+├── package-lock-json
+├── tailwind.config.js
+└── README.md
+```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- GETTING STARTED -->
+## Getting Started
 
-### Making a Progressive Web App
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Prerequisites
 
-### Advanced Configuration
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Installation
 
-### Deployment
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Get a free API Key at [https://omdbapi.com/](https://omdbapi.com/)
+3. Clone the repo
+   ```sh
+   git clone https://github.com/enes9103/movie_app_task_react_ts
+   ```
+4. Install NPM packages
+   ```sh
+   npm install  or yarn install
+   ``` 
 
-### `npm run build` fails to minify
+5. The project is ready, you can start using it now.
+    You can run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    `npm start` or `yarn start`
+
+    Runs the app in the development mode.\
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- NOTES -->
+## Notes
+
+- You can add additional functionalities to your app.
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>

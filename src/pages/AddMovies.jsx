@@ -88,20 +88,6 @@ function AddMovies() {
     setPreviousFocusEl(document.activeElement);
   };
 
-  const style = {
-    position: "absolute",
-    top: "40%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "full",
-    height: "full",
-    bgcolor: "background.paper",
-    border: "1px solid #000",
-    boxShadow: 24,
-    borderRadius: "10px",
-    p: 4,
-  };
-
   return (
     <div className="">
       <div className="relative flex flex-col md:flex-row justify-center">
