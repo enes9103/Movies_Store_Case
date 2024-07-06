@@ -4,7 +4,7 @@ import CardComponent from '../components/Card';
 
 const Favorite = () => {
   const { favorites, favoriteHandler } = useContext(MovieContext);
-console.log(favorites);
+
   return (
     <>
       {favorites?.length ? (
